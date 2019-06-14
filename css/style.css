@@ -13,8 +13,8 @@ body {
   padding: 0;
   font-size: 100%;
   font-family: "Roboto", sans-serif;
-  color: white;
-  background-color: #2c3e50;
+  color: black;
+  /*background-color: #2c3e50;*/
 }
 
 a:link,
@@ -31,21 +31,25 @@ header.page-header {
   z-index: 5;
   min-height: 20px;
   padding: 20px;
-  color: white;
-  background-image:
+  color: black;
+  /*background-image:
     linear-gradient(45deg, #34495e 25%, transparent 25%),
     linear-gradient(-45deg, #34495e 25%, transparent 25%),
     linear-gradient(135deg, #34495e 25%, transparent 25%),
     linear-gradient(-135deg, #34495e 25%, transparent 25%);
   background-position: 10px 0, 10px 0, 0 0, 0 0;
   background-size: 20px 20px;
-  box-shadow: 0 0 5px 0 #333333;
+  box-shadow: 0 0 5px 0 #333333;*/
 }
 .logo {
   position: absolute;
   top: 10px;
   left: 20px;
   margin: 0;
+}
+
+.main-menu{
+  float: right;
 }
 
 .main-menu ul {
@@ -61,7 +65,7 @@ header.page-header {
 }
 
 .main-menu a {
-  color: white;
+  color: black;
 }
 
 /* Main */
