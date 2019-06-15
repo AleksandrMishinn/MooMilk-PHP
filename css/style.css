@@ -7,14 +7,12 @@
     url("roboto.woff") format("woff");
 }
 
-html,
 body {
   margin: 0;
   padding: 0;
   font-size: 100%;
   font-family: "Roboto", sans-serif;
   color: black;
-  /*background-color: #2c3e50;*/
 }
 
 a:link,
@@ -24,32 +22,25 @@ a:active {
   color: #c0392b;
 }
 
-/* Header */
-header.page-header {
-	
-  position: relative;
-  z-index: 5;
-  min-height: 20px;
-  padding: 20px;
-  color: black;
-  /*background-image:
-    linear-gradient(45deg, #34495e 25%, transparent 25%),
-    linear-gradient(-45deg, #34495e 25%, transparent 25%),
-    linear-gradient(135deg, #34495e 25%, transparent 25%),
-    linear-gradient(-135deg, #34495e 25%, transparent 25%);
-  background-position: 10px 0, 10px 0, 0 0, 0 0;
-  background-size: 20px 20px;
-  box-shadow: 0 0 5px 0 #333333;*/
+.top-block{
+  width: 100%;
+  height: 0;
+  background-color: white;
+  background-image: url(../images/bg1.png);
+  background-size: cover;
+  padding-top: 60%; 
 }
+
 .logo {
+  padding-top: 10px;
   position: absolute;
-  top: 10px;
   left: 20px;
-  margin: 0;
 }
 
 .main-menu{
   float: right;
+  padding-top: 30px;
+  padding-right: 15%;
 }
 
 .main-menu ul {
@@ -68,13 +59,20 @@ header.page-header {
   color: black;
 }
 
+.phone{
+  float: right;
+  position: absolute;
+}
+
+
 /* Main */
 main {
   min-height: 200px;
   padding-top: 50px;
   color: black;
-  background-color: white;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAABlBMVEX///+pqalTpKl9AAAAAnRSTlMAGovxNEIAAAAdSURBVDjLY2AAAUaG4UYxDDsfjfp91O+jfqfE7wCzpQCw/dq+qQAAAABJRU5ErkJggg==");
+  /* background-color: white;
+  background-image: url(/images/bg1.png);
+  background-size: 100%; */
 }
 
 main::after {
@@ -82,6 +80,7 @@ main::after {
   display: table;
   clear: both;
 }
+
 
 .about-me {
   min-height: 100px;
