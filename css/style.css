@@ -7,6 +7,14 @@
     url("roboto.woff") format("woff");
 }
 
+@font-face {
+  font-weight: 400;
+  font-family: "MyriadPro";
+  font-style: normal;
+  src:
+    local("MyriadPro-Regular")
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -25,13 +33,13 @@ a:active {
 
 
 .top-block{
-  width: 100%;
-  height: 0;
+  /* width: 100%;
+  height: 0;  */
   background-color: white;
   background-image: url(../images/bg1.png);
-  background-size: cover;
-  padding-top: 60%;  
-
+  background-size: cover; 
+  height: 1000px;
+  /* padding-top: 60%;    */
 } 
 
 .logo {
@@ -43,7 +51,7 @@ a:active {
 .main-menu{
   float: right;
   padding-top: 30px;
-  padding-right: 25%;
+  padding-right: 5%;
 }
 
 .main-menu ul {
@@ -55,11 +63,12 @@ a:active {
 
 .main-menu li {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 4em;
 }
 
 .main-menu a {
   color: black;
+  font-family: "MyriadPro";
 }
 
 .phone{
