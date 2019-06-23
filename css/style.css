@@ -1,25 +1,28 @@
-@font-face {
+/* @font-face {
   font-weight: 400;
   font-family: "Roboto";
   font-style: normal;
   src:
     local("Roboto Regular"),
     url("roboto.woff") format("woff");
-}
+} */
 
 @font-face {
-  font-weight: 400;
-  font-family: "MyriadPro";
-  font-style: normal;
-  src:
-    local("MyriadPro-Regular")
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/myriadpro-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/myriadpro-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/myriadpro-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/myriadpro-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/myriadpro-regular.svg#myriadpro-regular') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+
 
 body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'MyriadPro-Regular', Arial;
   color: black;
 
 }
@@ -140,7 +143,7 @@ main::after {
 }
 
 /* Footer */
-footer.page-footer {
+/* footer.page-footer {
   min-height: 50px;
   padding: 20px;
   font-size: 14px;
@@ -178,4 +181,4 @@ footer.page-footer {
   float: right;
   padding-top: 20px;
   font-size: 12px;
-}
+} */
