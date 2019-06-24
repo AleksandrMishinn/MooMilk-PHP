@@ -38,7 +38,7 @@ a{
 
 .main-menu {
   padding-top: 2%;
-  padding-left: 30%;
+  padding-left: 35%;
   font-weight: bold;
 }
 
@@ -61,3 +61,22 @@ a{
   padding-left: 5%;
   font-size: 150%;
 }
+
+.green-text{
+  color: #59d56d;
+}
+
+.main-promo .small-text{
+  font-size: 80%;
+}
+
+.button-order {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 30px;
+  background: #70b8d9;
+  box-shadow: 0 -2px #588da5 inset;
+  transition: 0.2s;
+} 
