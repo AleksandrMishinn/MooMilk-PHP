@@ -1,32 +1,32 @@
 @font-face {
   font-family: 'MyriadPro-Regular';
   src: url('../fonts/myriadpro-regular.eot');
-  src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), 
-  url('../fonts/myriadpro-regular.woff2') format('woff2'), 
-  url('../fonts/myriadpro-regular.woff') format('woff'), 
-  url('../fonts/myriadpro-regular.ttf') format('truetype'), 
-  url('../fonts/myriadpro-regular.svg#myriadpro-regular') format('svg');
+  src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/myriadpro-regular.woff2') format('woff2'), url('../fonts/myriadpro-regular.woff') format('woff'), url('../fonts/myriadpro-regular.ttf') format('truetype'), url('../fonts/myriadpro-regular.svg#myriadpro-regular') format('svg');
 }
 
 body {
   margin: 0;
   font-family: 'MyriadPro-Regular', Arial;
-  color: black; 
-}
-
-a:link, a:visited, a:hover, a:active {
   color: black;
+  background-color: white;
 }
 
-a{
+/* a:link, a:visited, a:hover, a:active {
+  color: black;
+} */
+
+a {
   text-decoration: none
 }
 
+h2 {
+  font-size: 200%;
+}
+
 .top-block {
-  background-color: white;
   background-image: url(../images/bg1.png);
   background-size: cover;
-  height: 1000px;
+  height: 1200px;
   font-size: 120%;
 }
 
@@ -37,6 +37,7 @@ a{
 }
 
 .main-menu {
+  text-transform: uppercase;
   padding-top: 2%;
   padding-left: 35%;
   font-weight: bold;
@@ -52,31 +53,48 @@ a{
 }
 
 .main-menu .phone {
-  float: right;  
+  float: right;
   color: #d65ee8;
 }
 
-.main-promo{
+.main-promo {
   padding-top: 5%;
   padding-left: 5%;
   font-size: 150%;
 }
 
-.green-text{
+.green-text {
   color: #59d56d;
 }
 
-.main-promo .small-text{
+.main-promo .small-text {
   font-size: 80%;
 }
 
 .button-order {
-  font-weight: 700;
+  font-weight: bolder;
   color: black;
   text-decoration: none;
+  text-transform: uppercase;
   padding: 1em 2em;
   border-radius: 30px;
   background: #70b8d9;
-  box-shadow: 0 -2px #588da5 inset;
-  transition: 0.2s;
-} 
+  outline: none;
+}
+
+.block2 {
+  font-size: 170%;
+  height: 1000px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.why-we{
+  text-align: left;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.text-title{
+  font-weight: bold;
+}
