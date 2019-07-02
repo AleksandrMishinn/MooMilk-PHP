@@ -24,9 +24,9 @@ h2 {
 }
 
 .top-block {
-  background-image: url(../images/bg1.png);
+  background-image: url(../images/bg2.png);
   background-size: cover;
-  height: 700px;
+  height: 1200px;
   font-size: 120%;
 }
 
@@ -113,7 +113,7 @@ h2 {
 }
 
 .why-we .center-column {
-/* height: 2%; */
+
 }
 
 .why-we .right-column {
