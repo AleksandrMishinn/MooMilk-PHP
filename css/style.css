@@ -90,7 +90,6 @@ h2 {
 }
 
 .why-we {
-
   padding-top: 2%;
   width: 100%;
 }
@@ -103,11 +102,17 @@ h2 {
   font-weight: bold;
 }
 
-.contacts{
-  background-color: #ecf9ff; 
-}
-.contacts h2{
-  padding-top: 5%;
+.contacts {
+  background-color: #ecf9ff;
+  overflow: hidden;
   padding-left: 10%;
 }
 
+.contacts h2 {
+  padding-top: 5%;
+}
+
+.map{
+  float: right;
+  padding-right: 5%;
+}
