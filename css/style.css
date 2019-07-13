@@ -68,8 +68,8 @@ h2 {
   color: #59d56d;
 }
 
-.pink-text{
-  color:#d65ee8; 
+.pink-text {
+  color: #d65ee8;
 }
 
 .main-promo .small-text {
@@ -125,7 +125,6 @@ section {
 #waveFooter {
   position: absolute;
   bottom: 0;
-  
 }
 
 #waveFooter path {
@@ -135,4 +134,26 @@ section {
 .map {
   float: right;
   padding-right: 5%;
+}
+
+.line {
+  width: 50px;
+  border-bottom: 1px solid #d65ee8;
+}
+
+.subscription{
+  padding: 0;
+  margin: 0;
+  height: 70vh; 
+  width: 100%;
+}
+
+.subscription td{
+  vertical-align: top;
+  width: 50%;
+}
+
+.right-column{
+  padding-left: 10%;
+  padding-top: 10%;
 }
