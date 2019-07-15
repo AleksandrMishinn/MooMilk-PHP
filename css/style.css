@@ -12,9 +12,9 @@ body {
   background-color: white;
 }
 
-/* a:link, a:visited, a:hover, a:active {
-  color: black;
-} */
+a:hover{
+  color:#d65ee8;
+}
 
 a {
   text-decoration: none
@@ -156,4 +156,19 @@ section {
 .right-column{
   padding-left: 10%;
   padding-top: 10%;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.productions{
+  background: #ecf9ff; 
+  overflow: hidden;
+}
+
+.productions table{
+width: 60%;
+text-align: center;
+margin: auto;
 }
