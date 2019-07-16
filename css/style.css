@@ -12,8 +12,8 @@ body {
   background-color: white;
 }
 
-a:hover{
-  color:#d65ee8;
+a:hover {
+  color: #d65ee8;
 }
 
 a {
@@ -23,6 +23,59 @@ a {
 h2 {
   font-size: 200%;
 }
+
+table {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 4%;
+}
+
+button {
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  border-radius: 30px;
+  background: #70b8d9;
+  outline: none;
+}
+
+section {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+  background: white;
+}
+
+/* to do */
+/* p{
+word-break: break-all;
+} */
+
+.text-title {
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: 80%;
+}
+
+.green-text {
+  color: #59d56d;
+}
+
+.pink-text {
+  color: #d65ee8;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* top-block */
 
 .top-block {
   background-image: url(../images/bg2.png);
@@ -64,28 +117,7 @@ h2 {
   font-size: 150%;
 }
 
-.green-text {
-  color: #59d56d;
-}
-
-.pink-text {
-  color: #d65ee8;
-}
-
-.main-promo .small-text {
-  font-size: 80%;
-}
-
-.button-order {
-  font-weight: bolder;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1em 2em;
-  border-radius: 30px;
-  background: #70b8d9;
-  outline: none;
-}
+/* About milk */
 
 .block2 {
   font-size: 170%;
@@ -103,23 +135,13 @@ h2 {
   margin-bottom: 10%;
 }
 
-.text-title {
-  font-weight: bold;
-}
+/* Contacts */
 
 .contacts {
   overflow: hidden;
   padding-left: 10%;
   height: 60vh;
   background: #ecf9ff;
-}
-
-section {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 10vh;
-  background: white;
 }
 
 #waveFooter {
@@ -141,34 +163,39 @@ section {
   border-bottom: 1px solid #d65ee8;
 }
 
-.subscription{
+/* Subscription */
+
+.subscription {
   padding: 0;
   margin: 0;
-  height: 70vh; 
+  height: 70vh;
   width: 100%;
 }
 
-.subscription td{
+.subscription td {
   vertical-align: top;
   width: 50%;
 }
 
-.right-column{
+.right-column {
   padding-left: 10%;
   padding-top: 10%;
+  text-align: left;
 }
 
-.center-text{
-  text-align: center;
-}
-
-.productions{
-  background: #ecf9ff; 
+.productions {
+  background: #ecf9ff;
   overflow: hidden;
+  text-align: center;
+  padding-bottom: 4%;
 }
 
-.productions table{
-width: 60%;
-text-align: center;
-margin: auto;
+.productions h2 {
+  padding-bottom: 2%;
+}
+
+/* Delivery and payments */
+
+.delivery-and-payment {
+  text-align: center;
 }
