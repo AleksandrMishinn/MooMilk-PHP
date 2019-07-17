@@ -51,11 +51,12 @@ section {
 }
 
 /* to do */
+
 /* p{
 word-break: break-all;
 } */
 
-.text-title {
+.title-text {
   font-weight: bold;
 }
 
@@ -73,6 +74,10 @@ word-break: break-all;
 
 .center-text {
   text-align: center;
+}
+
+.left-text {
+  text-align: left;
 }
 
 /* top-block */
@@ -149,6 +154,15 @@ word-break: break-all;
   bottom: 0;
 }
 
+#waveDelivery path {
+  fill: white;
+}
+
+#waveDelivery {
+  position: absolute;
+  bottom: 0;
+}
+
 #waveFooter path {
   fill: #ecf9ff;
 }
@@ -166,13 +180,21 @@ word-break: break-all;
 /* Subscription */
 
 .subscription {
+  overflow: hidden;
+  height: 80vh;
+  background: #ecf9ff;
+}
+
+/* Feedback */
+
+.feedback {
   padding: 0;
   margin: 0;
   height: 70vh;
   width: 100%;
 }
 
-.subscription td {
+.feedback td {
   vertical-align: top;
   width: 50%;
 }
@@ -198,4 +220,21 @@ word-break: break-all;
 
 .delivery-and-payment {
   text-align: center;
+  height: 60vh;
+}
+
+.delivery-and-payment h2 {
+  padding-bottom: 2%;
+}
+
+.delivery-offer {
+  padding-bottom: 2%;
+}
+
+.waveDelivery {
+  background: #ecf9ff;
+}
+
+.delivery-and-payment td {
+  text-align: left;
 }
