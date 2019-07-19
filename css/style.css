@@ -1,240 +1,260 @@
 @font-face {
-  font-family: 'MyriadPro-Regular';
-  src: url('../fonts/myriadpro-regular.eot');
-  src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/myriadpro-regular.woff2') format('woff2'), url('../fonts/myriadpro-regular.woff') format('woff'), url('../fonts/myriadpro-regular.ttf') format('truetype'), url('../fonts/myriadpro-regular.svg#myriadpro-regular') format('svg');
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/myriadpro-regular.eot');
+    src: url('../fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/myriadpro-regular.woff2') format('woff2'), url('../fonts/myriadpro-regular.woff') format('woff'), url('../fonts/myriadpro-regular.ttf') format('truetype'), url('../fonts/myriadpro-regular.svg#myriadpro-regular') format('svg');
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'MyriadPro-Regular', Arial;
-  color: black;
-  background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'MyriadPro-Regular', Arial;
+    color: black;
+    background-color: white;
 }
 
 a:hover {
-  color: #d65ee8;
+    color: #d65ee8;
 }
 
 a {
-  text-decoration: none
+    text-decoration: none
 }
 
 h2 {
-  font-size: 200%;
+    font-size: 200%;
 }
 
 table {
-  width: 60%;
-  text-align: center;
-  margin: auto;
-  padding-bottom: 4%;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 4%;
 }
 
 button {
-  font-weight: bolder;
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1em 2em;
-  border-radius: 30px;
-  background: #70b8d9;
-  outline: none;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    border-radius: 30px;
+    background: #70b8d9;
+    outline: none;
 }
 
 section {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 10vh;
-  background: white;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    background: white;
 }
+
 
 /* to do */
 
-/* p{
-word-break: break-all;
-} */
+p {
+    word-wrap: break-word;
+}
 
 .title-text {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .small-text {
-  font-size: 80%;
+    font-size: 80%;
 }
 
 .green-text {
-  color: #59d56d;
+    color: #59d56d;
 }
 
 .pink-text {
-  color: #d65ee8;
+    color: #d65ee8;
 }
 
 .center-text {
-  text-align: center;
+    text-align: center;
 }
 
 .left-text {
-  text-align: left;
+    text-align: left;
 }
+
 
 /* top-block */
 
 .top-block {
-  background-image: url(../images/bg2.png);
-  background-size: cover;
-  height: 1200px;
-  font-size: 120%;
+    background-image: url(../images/bg2.png);
+    background-size: cover;
+    height: 1200px;
+    font-size: 120%;
 }
 
 .logo {
-  padding-top: 15px;
-  position: absolute;
-  left: 25px;
+    padding-top: 15px;
+    position: absolute;
+    left: 25px;
 }
 
 .main-menu {
-  text-transform: uppercase;
-  padding-top: 2%;
-  padding-left: 35%;
-  font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 2%;
+    padding-left: 35%;
+    font-weight: bold;
 }
 
 .main-menu ul {
-  list-style: none;
+    list-style: none;
 }
 
 .main-menu li {
-  float: left;
-  margin-right: 4em;
+    float: left;
+    margin-right: 4em;
 }
 
 .main-menu .phone {
-  float: right;
-  color: #d65ee8;
+    float: right;
+    color: #d65ee8;
 }
 
 .main-promo {
-  padding-top: 5%;
-  padding-left: 5%;
-  font-size: 150%;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 150%;
 }
+
 
 /* About milk */
 
 .block2 {
-  font-size: 170%;
-  height: 1000px;
-  margin-top: 5%;
-  text-align: center;
+    font-size: 170%;
+    height: 1000px;
+    margin-top: 5%;
+}
+
+.block2 td {
+    width: 33.3vw;
+    text-align: left;
 }
 
 .why-we {
-  padding-top: 2%;
-  width: 100%;
+    padding-top: 2%;
+    width: 100%;
 }
 
 .why-we .normal-text {
-  margin-bottom: 10%;
+    margin: 10%;
+    margin-left: 18%;
 }
 
-/* Contacts */
-
-.contacts {
-  overflow: hidden;
-  padding-left: 10%;
-  height: 60vh;
-  background: #ecf9ff;
+.why-we .title-text {
+    margin: 10%;
 }
 
-#waveFooter {
-  position: absolute;
-  bottom: 0;
-}
-
-#waveDelivery path {
-  fill: white;
-}
-
-#waveDelivery {
-  position: absolute;
-  bottom: 0;
-}
-
-#waveFooter path {
-  fill: #ecf9ff;
-}
-
-.map {
-  float: right;
-  padding-right: 5%;
-}
-
-.line {
-  width: 50px;
-  border-bottom: 1px solid #d65ee8;
-}
 
 /* Subscription */
 
 .subscription {
-  overflow: hidden;
-  height: 80vh;
-  background: #ecf9ff;
+    overflow: hidden;
+    height: 80vh;
+    background: #ecf9ff;
 }
 
-/* Feedback */
-
-.feedback {
-  padding: 0;
-  margin: 0;
-  height: 70vh;
-  width: 100%;
-}
-
-.feedback td {
-  vertical-align: top;
-  width: 50%;
-}
-
-.right-column {
-  padding-left: 10%;
-  padding-top: 10%;
-  text-align: left;
-}
-
-.productions {
-  background: #ecf9ff;
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 4%;
-}
-
-.productions h2 {
-  padding-bottom: 2%;
-}
 
 /* Delivery and payments */
 
 .delivery-and-payment {
-  text-align: center;
-  height: 60vh;
+    text-align: center;
+    height: 60vh;
 }
 
 .delivery-and-payment h2 {
-  padding-bottom: 2%;
+    padding-bottom: 2%;
 }
 
 .delivery-offer {
-  padding-bottom: 2%;
+    padding-bottom: 2%;
 }
 
 .waveDelivery {
-  background: #ecf9ff;
+    background: #ecf9ff;
 }
 
 .delivery-and-payment td {
-  text-align: left;
+    text-align: left;
+}
+
+
+/* Feedback */
+
+.feedback {
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+    width: 100%;
+}
+
+.feedback td {
+    vertical-align: top;
+    width: 50%;
+}
+
+.right-column {
+    padding-left: 10%;
+    padding-top: 10%;
+    text-align: left;
+}
+
+
+/* Productions */
+
+.productions {
+    height: 75vh;
+    background: #ecf9ff;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.productions h2 {
+    padding-bottom: 2%;
+}
+
+
+/* Contacts */
+
+.contacts {
+    overflow: hidden;
+    padding-left: 10%;
+    height: 60vh;
+    background: #ecf9ff;
+}
+
+#waveFooter {
+    position: absolute;
+    bottom: 0;
+}
+
+#waveDelivery path {
+    fill: white;
+}
+
+#waveDelivery {
+    position: absolute;
+    bottom: 0;
+}
+
+#waveFooter path {
+    fill: #ecf9ff;
+}
+
+.map {
+    float: right;
+    padding-right: 5%;
+}
+
+.line {
+    width: 50px;
+    border-bottom: 1px solid #d65ee8;
 }
