@@ -356,3 +356,49 @@ p {
 #waveFooter path {
     fill: #ecf9ff;
 }
+
+
+/* Button-up */
+
+#button-up {
+    position: fixed;
+    bottom: 30px;
+    right: 5%;
+    z-index: 2;
+}
+
+#button-up a {
+    width: 58px;
+    display: block;
+    text-align: center;
+    font: 9px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#button-up a:hover {
+    color: #70b8d9;
+}
+
+#button-up span {
+    width: 58px;
+    height: 58px;
+    display: block;
+    margin-bottom: 7px;
+    background: gray url(../images/up-arrow.png) no-repeat center center;
+    background-size: 25px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+#button-up a:hover span {
+    background-color: #70b8d9;
+}
