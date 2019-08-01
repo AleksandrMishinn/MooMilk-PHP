@@ -1,18 +1,21 @@
 $(document).ready(function() {
-    $("#button-up").hide();
-    $(function() {
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 500) {
-                $('#button-up').fadeIn();
-            } else {
-                $('#button-up').fadeOut();
-            }
-        });
-        $('#button-up a').click(function() {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
     });
+
+    $('.scrollup').click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+
+});
+
+$("body").on('click', '[href*="#"]', function(e) {
+    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top }, 1000);
+    e.preventDefault();
 });
