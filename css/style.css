@@ -208,6 +208,127 @@ p {
 }
 
 
+/* Callback form */
+
+#modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.81);
+    z-index: 5;
+    display: none;
+}
+
+.callBack {
+    position: relative;
+    max-width: 400px;
+    margin: 50px auto 0;
+    background: white;
+    border-radius: 30px;
+    /* display: none; */
+}
+
+.callBack-left-decoration,
+.callBack-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #ecf9ff;
+    border-radius: 20px;
+}
+
+.callBack-left-decoration {
+    bottom: 60px;
+    left: -30px;
+}
+
+.callBack-right-decoration {
+    top: 60px;
+    right: -30px;
+}
+
+.callBack-left-decoration:before,
+.callBack-left-decoration:after,
+.callBack-right-decoration:before,
+.callBack-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: white;
+}
+
+.callBack-left-decoration:before {
+    top: -20px;
+}
+
+.callBack-left-decoration:after {
+    top: 20px;
+    left: 10px;
+}
+
+.callBack-right-decoration:before {
+    top: -20px;
+    right: 0;
+}
+
+.callBack-right-decoration:after {
+    top: 20px;
+    right: 10px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+
+.callBack-inner {
+    padding: 50px;
+}
+
+.callBack-inner input,
+.callBack-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'MyriadPro-Regular', sans-serif;
+}
+
+.callBack-inner input[type="submit"] {
+    margin-top: 30px;
+    background: #ecf9ff;
+    border-bottom: 2px solid #707981;
+    color: #707981;
+    font-size: 14px;
+}
+
+.callBack-inner textarea {
+    resize: none;
+}
+
+.callBack-inner h3 {
+    margin-top: 0;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #707981;
+}
+
+
 /* Delivery and payments */
 
 .delivery-and-payment {

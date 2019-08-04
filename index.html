@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
     <script type="text/javascript" src="js/up-button.js"></script>
-    <script type="text/javascript" src="js/soft-transition.js"></script>
 
 </head>
 
@@ -30,7 +30,7 @@
                 <ul>
                     <li><a href="#about-milk">О МОЛОКЕ</a></li>
                     <li><a href="#productions">ПРОДУЦКЦИЯ</a></li>
-                    <li><a href="#to-order">ЗАКАЗАТЬ</a></li>
+                    <li><a href="#to-order" id="btn-prod-top">ЗАКАЗАТЬ</a></li>
                     <li><a href="#subscription">ПОДПИСКА</a></li>
                     <li><a href="#contacts">КОНТАКТЫ</a></li>
                     <li class="phone">8 (800) 777-14-14</li>
@@ -155,6 +155,23 @@
 
         <button id="btn-prod">Заказать</button>
 
+    </div>
+
+    <!-- Callback form -->
+
+    <div id="modal">
+        <form class="callBack" id="callbackForm">
+            <div class="callBack-left-decoration"></div>
+            <div class="callBack-right-decoration"></div>
+            <div class="circle"></div>
+            <div class="callBack-inner">
+                <h3>Давайте знакомиться</h3>
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Номер" id='callback-number'>
+                <textarea placeholder="Дополнительная информация" rows="3"></textarea>
+                <input type="submit" value="Отправить" id="close-callback-form">
+            </div>
+        </form>
     </div>
 
     <!-- Delivery and payment -->
@@ -299,5 +316,6 @@
 </body>
 
 <script type="text/javascript" src="js/soft-transition.js"></script>
+<script type="text/javascript" src="js/callback-form.js"></script>
 
 </html>
