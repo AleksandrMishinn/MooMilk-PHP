@@ -16,7 +16,7 @@
             <tr>
 
  <?php 
-
+echo phpinfo();
 $connection = include "connection.php"; 
 
 $query_result = mysqli_query($connection, 'SELECT products.name AS product, products.price, products.img, categories.name AS category
@@ -32,54 +32,64 @@ if ($query_result == false)
 }  
 
 $category_array = array();
+$products_array = array();
 
 while ( ($current_prod = mysqli_fetch_assoc($query_result))) {
 
     $current_category = $current_prod['category'];
 
+    $products_array[] = array($current_prod['product'], $current_prod['price'], $current_prod['img'], $current_category);
+
     if(array_search($current_category, $category_array) === false){
-        $category_array[] = $current_category; 
-?>
+        $category_array[] = $current_category;         
+       
+        echo "<td><a href=''>".$current_category."</a></td>"; 
+      }
+  };
 
-<td><a href=""><?php echo $current_category ?></a></td> 
+    unset($current_prod);
+    unset($current_category);
 
-        <?php 
-    };}
-$connection->close();
-?>
+    $connection->close();
+    ?>
 
-            </tr>
-        </table>
+</tr>
+</table>
 
-        <table class="productions-table">
-            <tr>
-                <td>
-                    <div><img src="images/sour cream.png" width="60%" alt="Продукт"></div>
-                </td>
-                <td>
-                    <div><img src="images/sour cream.png" width="60%" alt="Продукт"></div>
-                </td>
-                <td>
-                    <div><img src="images/sour cream.png" width="60%" alt="Продукт"></div>
-                </td>
-                <td>
-                    <div><img src="images/sour cream.png" width="60%" alt="Продукт"></div>
-                </td>
-            </tr>
-            <tr>
-                <td>Молоко козье</td>
-                <td>Сметана 15%</td>
-                <td>Кефир</td>
-                <td>Молоко коровье</td>
-            </tr>
-            <tr class="price">
-                <td>280 р</td>
-                <td>210 р</td>
-                <td>240 р</td>
-                <td>260 р</td>
-            </tr>
-        </table>
+<table class="productions-table">
+    <tr>
 
-        <button id="btn-prod">Показать все</button>
+<?php
+ 
+for($count = 0; $count < count($category_array); $count++) {
 
-    </div>
+    $products_in_category = array_keys($category_array, $category_array[$count]);
+
+    foreach ($products_in_category as $current_prod) {
+        echo "<td>";
+        echo "<div><img src='".$current_prod['img']."' width='60% alt='".$current_prod['img']."'></div>";  
+        echo "</td>";
+    }} ?>
+
+
+
+
+
+    </tr>
+    <tr>
+        <td>Молоко козье</td>
+        <td>Сметана 15%</td>
+        <td>Кефир</td>
+        <td>Молоко коровье</td>
+    </tr>
+    <tr class="price">
+        <td>280 р</td>
+        <td>210 р</td>
+        <td>240 р</td>
+        <td>260 р</td>
+    </tr>
+</table>
+
+<button id="btn-prod">Показать все</button>
+
+</div>
