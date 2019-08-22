@@ -16,7 +16,7 @@
             <tr>
 
  <?php 
-echo phpinfo();
+
 $connection = include "connection.php"; 
 
 $query_result = mysqli_query($connection, 'SELECT products.name AS product, products.price, products.img, categories.name AS category
@@ -61,18 +61,20 @@ while ( ($current_prod = mysqli_fetch_assoc($query_result))) {
 
 <?php
  
-for($count = 0; $count < count($category_array); $count++) {
+for($count = 0; $count < 1; $count++) { //to do count($category_array)
+
+$current_category = $category_array[$count];
 
     $products_in_category = array_keys($category_array, $category_array[$count]);
 
-    foreach ($products_in_category as $current_prod) {
-        echo "<td>";
-        echo "<div><img src='".$current_prod['img']."' width='60% alt='".$current_prod['img']."'></div>";  
-        echo "</td>";
-    }} ?>
-
-
-
+    foreach ($products_array as $current_prod) { 
+        if ($current_prod[3] == $current_category) {
+            echo "<td>";
+            echo "<div><img src='images/".$current_prod[2]."' width='60% alt='Продукт'></div>";  
+            echo "</td>";
+        } 
+    }
+}?>
 
 
     </tr>
