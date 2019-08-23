@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="css/item_slider.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="js/slider-disabled-js.js"></script>
 
 <section>
     <svg id="waveFooter" data-name="waveFooter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 172">
@@ -6,7 +9,83 @@
         transform="translate(0 -5)" /></svg>
     </section>
 
-    <div class="productions">
+    
+
+
+<div class="productions">
+
+    <h2 class="title-text center-text">
+        <a id="productions"></a>
+    Продукция</h2>
+
+<div id="mi-slider" class="mi-slider">
+    <ul>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+    </ul>
+    <ul>
+       <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+       <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+       <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+       <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+    </ul>
+    <ul>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+    </ul>
+    <ul>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+    </ul>
+       <ul>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+    </ul>
+       <ul>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
+    </ul>
+
+    <nav>
+        <a href="#">Популярное</a>
+        <a href="#">Молоко</a>
+        <a href="#">Кефир</a>
+        <a href="#">Йогурт</a>
+        <a href="#">Сметана</a>
+        <a href="#">Ряженка</a>
+    </nav>
+
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/slider.js"></script>
+        <script>
+            $(function() {
+
+                $( '#mi-slider' ).catslider();
+
+            });
+        </script>
+
+        <button id="btn-prod">Показать все</button>
+
+        </div>
+
+
+
+
+
+
+   <!--      <div class="productions">
 
         <h2 class="title-text center-text">
             <a id="productions"></a>
@@ -92,6 +171,8 @@ $current_category = $category_array[$count];
     </tr>
 </table>
 
+
+
 <button id="btn-prod">Показать все</button>
 
-</div>
+</div> -->
