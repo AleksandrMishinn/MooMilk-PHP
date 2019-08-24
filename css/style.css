@@ -39,7 +39,7 @@ button {
     text-transform: uppercase;
     padding: 1em 2em;
     border-radius: 30px;
-    background: #70b8d9;
+    background: #a4dcf6;
     outline: none;
 }
 
@@ -176,7 +176,7 @@ p {
 }
 
 .productions h2 {
-    padding-bottom: 1%;
+    padding-bottom: 3%;
 }
 
 .price {
