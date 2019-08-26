@@ -79,6 +79,7 @@
     top: 400px;
     text-align: center;
     /*max-width: 800px;*/
+    max-height: 10%;
     margin: 0 auto;
     border-top: 5px solid #333;
 }
@@ -269,21 +270,4 @@
     .mi-slider nav {
         display: none;
     }
-}
-
-#btn-prod {
-    margin-top: 5%;
-    width: 32vh;
-    font-weight: normal;
-    font-size: 80%;
-    background: #a4dcf6;
-}
-
-.productions {
-    height: 110vh;
-    background: #ecf9ff;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 4%;
-    font-size: 170%;
 }

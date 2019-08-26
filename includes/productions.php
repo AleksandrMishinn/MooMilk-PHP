@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/style.css" type="text/css">
+<!-- <link rel="stylesheet" href="css/style.css" type="text/css"> -->
 <link rel="stylesheet" href="css/item_slider.css" type="text/css">
 <script src="js/slider-disabled-js.js"></script>
 
@@ -146,7 +146,7 @@ echo "</nav>";
 
 
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  -->
         <script src="js/slider.js"></script>
         <script>
             $(function() {
@@ -156,7 +156,7 @@ echo "</nav>";
             });
         </script>
 
-        <button id="btn-prod">Показать все</button>
+        <button id="btn-prod">Хочу!</button>
 
         </div>
 

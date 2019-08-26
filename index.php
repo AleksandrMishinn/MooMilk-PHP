@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
     <script type="text/javascript" src="js/up-button.js"></script>
 
 </head>
@@ -114,9 +114,9 @@
             <div class="circle"></div>
             <div class="callBack-inner">
                 <h3>Давайте знакомиться</h3>
-                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваше имя" id='callback-name'>
                 <input type="tel" placeholder="Номер" id='callback-number'>
-                <textarea placeholder="Дополнительная информация" rows="3"></textarea>
+                <textarea placeholder="Дополнительная информация" rows="3" id='callback-comment'></textarea>
                 <input type="submit" value="Отправить" id="close-callback-form">
             </div>
         </form>
