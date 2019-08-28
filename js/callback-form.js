@@ -8,29 +8,28 @@ $(function() {
 
 $('#modal').on('click', function(e) {
 	if (e.target.id == 'modal') {
-		console.log(1);
 		$(this).hide();
 		$('#callbackForm')[0].reset();
 	}
 })
 
-$('#close-callback-form').on('click', function(e) {
-	if (e.target.id == 'close-callback-form') {
-		console.log(2);
-		
-	}
+$('#modal').submit(function(){
+
+var name = document.getElementById('callback-name').value;
+var number = document.getElementById('callback-number').value;
+var comment = document.getElementById('callback-comment').value;
+
+	$.post(
+        '../includes/send_contacts.php', 
+         {name: name, number: number, comment: comment},         
+
+        function(msg) { 
+        	$('#modal').hide('slow');
+        	$('#my_message').html(msg);
+        }
+        );
+
+	return false;
 });
-				// $(this).hide();
-				// $('#callbackForm')[0].reset();} 
-	
 
-$.ajax({
-			type: "GET",
-			url:"send_contacts.php",
-			data: 1,
-			success: function(data) {
-				console.log('kek');
-			}
-			})
 
-console.log(3);

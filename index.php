@@ -108,15 +108,15 @@
     <!-- Callback form -->
 
     <div id="modal">
-        <form class="callBack" id="callbackForm">
+        <form class="callBack" id="callbackForm"> <!-- method="post" action='includes/send_contacts.php' --> 
             <div class="callBack-left-decoration"></div>
             <div class="callBack-right-decoration"></div>
             <div class="circle"></div>
             <div class="callBack-inner">
                 <h3>Давайте знакомиться</h3>
-                <input type="text" placeholder="Ваше имя" id='callback-name'>
-                <input type="tel" placeholder="Номер" id='callback-number'>
-                <textarea placeholder="Дополнительная информация" rows="3" id='callback-comment'></textarea>
+                <input type="text" placeholder="Ваше имя" id='callback-name' name='f[name]'>
+                <input type="tel" placeholder="Номер" id='callback-number' name='f[number]'>
+                <textarea placeholder="Дополнительная информация" rows="3" id='callback-comment' name='f[comment]'></textarea>
                 <input type="submit" value="Отправить" id="close-callback-form">
             </div>
         </form>
@@ -261,7 +261,7 @@
     </section>
 
 
-
+<div id="my_message"></div>
 </body>
 
 <script type="text/javascript" src="js/soft-transition.js"></script>
