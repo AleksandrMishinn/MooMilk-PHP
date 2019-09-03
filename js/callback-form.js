@@ -24,12 +24,14 @@ var comment = document.getElementById('callback-comment').value;
          {name: name, number: number, comment: comment},         
 
         function(msg) { 
-        	$('#modal').hide('slow');
-        	$('#my_message').html(msg);
+        	$('#modal').hide();
+        	// $('#my_message').html(msg);
+        	$('#modal-final').fadeIn(700);
+        	$('#modal-final').fadeOut(2000);
         }
         );
 
-	return false;
+	  return false;
 });
 
 

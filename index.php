@@ -108,7 +108,7 @@
     <!-- Callback form -->
 
     <div id="modal">
-        <form class="callBack" id="callbackForm"> <!-- method="post" action='includes/send_contacts.php' --> 
+        <form class="callBack" id="callbackForm"> 
             <div class="callBack-left-decoration"></div>
             <div class="callBack-right-decoration"></div>
             <div class="circle"></div>
@@ -118,6 +118,14 @@
                 <input type="tel" placeholder="Номер" id='callback-number' name='f[number]'>
                 <textarea placeholder="Дополнительная информация" rows="3" id='callback-comment' name='f[comment]'></textarea>
                 <input type="submit" value="Отправить" id="close-callback-form">
+            </div>
+        </form>
+    </div>
+
+    <div id="modal-final">
+        <form class="callBack-final"> 
+            <div class="we-will-soon"> 
+                <h3 class="center-text title-text" >Мы совсем скоро с вами свяжемся</h3>
             </div>
         </form>
     </div>
