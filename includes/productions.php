@@ -29,7 +29,7 @@ $query_result = mysqli_query($connection, 'SELECT products.name AS product, prod
 
 if ($query_result == false)
 {
-    echo 'Ошибка выполнения запроса.';
+    echo 'Ошибка выполнения запроса:'.mysql_error();
     $connection->close();
     exit();
 }  
@@ -84,69 +84,7 @@ foreach ($categories_array as $current_category) {
 echo "</nav>";
 ?>
 
-
-    <!-- <ul>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-    </ul>
-    <ul>
-       <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-       <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-       <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-       <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-    </ul>
-    <ul>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-    </ul>
-    <ul>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-    </ul>
-       <ul>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-    </ul>
-       <ul>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-        <li><img src="images/sour cream.png" alt="img01" width="60%"><h4>Молоко козье <br> 280 р.</h4></li>
-    </ul> -->
-
-
-
-
-
-
-
-
-   <!--  <nav>
-        <a href="#">Популярное</a>
-        <a href="#">Молоко</a>
-        <a href="#">Кефир</a>
-        <a href="#">Йогурт</a>
-        <a href="#">Сметана</a>
-        <a href="#">Ряженка</a>
-    </nav> -->
-
-
-
-
-
-
-
-
 </div>
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  -->
         <script src="js/slider.js"></script>
         <script>
             $(function() {
@@ -159,10 +97,6 @@ echo "</nav>";
         <button id="btn-prod">Хочу!</button>
 
         </div>
-
-
-
-
 
 
    <!--      <div class="productions">
