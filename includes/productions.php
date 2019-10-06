@@ -51,9 +51,6 @@ if($first_element === true){
     $first_element = false;
 }
 
-    // $products_array[] = array($current_prod['product'], $current_prod['price'], $current_prod['img'], $current_category);
-
-
 if(array_search($current_category, $categories_array) === false){
     $categories_array[] = $current_category;      
     $count_prod_on_category = 0;
