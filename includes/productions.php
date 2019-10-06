@@ -22,14 +22,14 @@
 
 $connection = include "connection.php"; 
 
-$query_result = mysqli_query($connection, 'SELECT products.name AS product, products.price, products.img, categories.name AS category
+$query_result = mysqli_query($connection, 'SELECT products.name AS product, products.price, products.img, category.name AS category
   FROM products AS products
-  LEFT JOIN categories AS categories ON ( products.category = categories.id ) 
-  ORDER BY categories.id');
+  LEFT JOIN category AS category ON ( products.category = category.id ) 
+  ORDER BY category.id');
 
 if ($query_result == false)
 {
-    echo 'Ошибка выполнения запроса:'.mysql_error();
+    echo 'Ошибка выполнения запроса.';
     $connection->close();
     exit();
 }  
