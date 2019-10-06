@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Авг 15 2019 г., 09:45
+-- Время создания: Окт 07 2019 г., 00:52
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -39,8 +39,8 @@ CREATE TABLE IF NOT EXISTS `category` (
 --
 
 INSERT INTO `category` (`id`, `name`) VALUES
-(1, 'Молоко'),
-(2, 'Популярное'),
+(1, 'Популярное'),
+(2, 'Молоко'),
 (3, 'Кефир'),
 (4, 'Йогурт'),
 (5, 'Сметана'),
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `profession` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `phone` (`phone`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Дамп данных таблицы `contacts`
@@ -69,7 +69,9 @@ CREATE TABLE IF NOT EXISTS `contacts` (
 
 INSERT INTO `contacts` (`id`, `name`, `phone`, `img`, `note`, `profession`) VALUES
 (1, 'Александр Семенов', '+7-911-777-77-7', 'happyFamily2.png', '', 'Лучший папа'),
-(2, 'Василий', '+7-911-777-77-8', '', '', 'Директор');
+(2, 'Василий', '+7-911-777-77-8', '', '', 'Директор'),
+(3, '', '', '', '', ''),
+(4, 'new kek', '+7(911) 111-11-', '', '12rfsdffds', '');
 
 -- --------------------------------------------------------
 
@@ -109,17 +111,29 @@ CREATE TABLE IF NOT EXISTS `products` (
   `img` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- Дамп данных таблицы `products`
 --
 
 INSERT INTO `products` (`id`, `name`, `category`, `price`, `special_price`, `img`) VALUES
-(1, 'Молоко козье', 2, '280.00', '0.00', 'goats_milk.png'),
-(2, 'Сметана 15%', 2, '210.00', '0.00', 'sour cream 15.png'),
-(3, 'Кефир', 2, '240.00', '0.00', 'kefir.png'),
-(4, 'Молоко коровье', 2, '260.00', '0.00', 'cows_milk');
+(1, 'Молоко козье', 1, '280.00', '0.00', 'cows_milk.png'),
+(2, 'Сметана 15%', 1, '78.00', '0.00', 'sour cream.png'),
+(3, 'Кефир', 1, '115.00', '0.00', 'kefir.png'),
+(4, 'Молоко коровье', 1, '260.00', '0.00', 'cows_milk.png'),
+(5, 'Молоко 5%', 2, '290.00', '0.00', 'cows_milk.png'),
+(6, 'Молоко 2,5%', 2, '280.00', '0.00', 'cows_milk.png'),
+(7, 'Молоко 1%', 2, '270.00', '0.00', 'cows_milk.png'),
+(8, 'Молоко 1,5%', 2, '275.00', '0.00', 'cows_milk.png'),
+(9, 'Кефир 1%', 3, '100.00', '0.00', 'kefir.png'),
+(10, 'Кефир 2%', 3, '115.00', '0.00', 'kefir.png'),
+(11, 'Йогурт с клубникой', 4, '65.00', '0.00', 'yogurt.png'),
+(12, 'Йогурт с малиной', 4, '65.00', '0.00', 'yogurt.png'),
+(13, 'Сметана 20%', 5, '85.00', '0.00', 'sour cream.png'),
+(14, 'Сметана 10%', 5, '65.00', '0.00', 'sour cream.png'),
+(15, 'Сметана 13%', 5, '75.00', '0.00', 'sour cream.png'),
+(16, 'Ряженка', 6, '85.00', '0.00', 'ryazhenka.png');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
